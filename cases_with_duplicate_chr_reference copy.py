@@ -19,7 +19,7 @@ def get_list_of_cases(sample_type:str, assembly:str):
     """ To get a list of all b38 cases of a certain sample type from cipapi;
     sample_type and assembly ex: raredisease/cancer, GRCh37/GRCh38 to be passed """
     cases= c.get_cases(sample_type=sample_type, assembly=assembly)
-    # cases = itertools.islice(cases, 215, 235, 1) #(if you'd like to use only a subset at a time)
+    # cases = itertools.islice(cases, 215, 235, 1) #(if you'd like to use only a subset at a time, you can modify start,stop and the filename in line 54 with each batch)
     return cases
 
 
